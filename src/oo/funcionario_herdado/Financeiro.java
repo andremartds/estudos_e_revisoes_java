@@ -1,4 +1,4 @@
-package oo.exemplo_herenaca.funcionario;
+package oo.funcionario_herdado;
 
 public class Financeiro extends Funcionario {
 

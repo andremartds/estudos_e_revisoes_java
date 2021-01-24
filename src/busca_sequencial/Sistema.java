@@ -20,7 +20,11 @@ public class Sistema {
 		buscaSequencialPessoa.vrPessoas.add(new Pessoa("Bernabe"));
 		
 		// vamos fazer uma busca na posição de josé
-		buscaSequencialPessoa.posicaoClientes("Bernabe");
+		//buscaSequencialPessoa.posicaoClientes("Bernabe");
+		
+		System.out.println(buscaSequencialPessoa.posicaoClientes("Bernabe", 0, 10));
+		
+		
 	}
 
 }

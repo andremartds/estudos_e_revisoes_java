@@ -1,9 +1,11 @@
-package oo.exemplo_herenaca.funcionario;
+package oo.funcionario_herdado;
 
-public class Funcionario {
+public abstract class Funcionario {
 	protected double salario;
 	private String nome;
 	
+	public abstract double getBonificacao();
+
 	public double getSalario() {
 		return salario;
 	}
@@ -17,9 +19,5 @@ public class Funcionario {
 		this.nome = nome;
 	}
 	
-	public double getBonificacao() {
-		System.out.println("Bonificação Funcionario comum");
-		return this.salario * 0.1;
-	}
 	
 }

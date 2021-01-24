@@ -1,6 +1,6 @@
-package oo.exemplo_herenaca.funcionario;
+package oo.funcionario_herdado;
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Autentica{
 
 	private int senha;
 	
@@ -15,5 +15,13 @@ public class Gerente extends Funcionario {
 	public double getBonificacao() {
 		System.out.println("Bonificação Gerente");
 		return super.salario + 1000.0;
+	}
+	
+	public boolean autentica(int senha) {
+		if(this.senha==senha) {
+			return true;
+		} else {
+			return false;	
+		}
 	}
 }

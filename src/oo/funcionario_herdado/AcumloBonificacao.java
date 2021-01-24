@@ -1,4 +1,4 @@
-package oo.exemplo_herenaca.funcionario;
+package oo.funcionario_herdado;
 
 public class AcumloBonificacao {
 	
@@ -9,12 +9,15 @@ public class AcumloBonificacao {
 		AcumloBonificacao.totalXBonificacao++;
 		return f.getBonificacao() + 100.0;
 	}
+	
 	public double getTotalBonificao() {
 		return totalBonificao;
 	}
+	
 	public void setTotalBonificao(double totalBonificao) {
 		this.totalBonificao = totalBonificao;
 	}
+	
 	public static int getTotalXBonificacao() {
 		return AcumloBonificacao.totalXBonificacao;
 	}
