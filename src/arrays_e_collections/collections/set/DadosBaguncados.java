@@ -3,9 +3,13 @@ package arrays_e_collections.collections.set;
 import java.util.HashSet;
 
 /*
-  * Conjuntos/Set em java são gerelmente definidos para se termos dados Homogêneos
+  * Conjuntos/Set em java são geralmente definidos para se termos dados Homogêneos
   * No exemplo abaixo definimos um conjunto heterogêneo (Forma errada)
 */
+
+/**
+ * review 10/21
+ * **/
 
 public class DadosBaguncados {
   public static void main(String[] args) {
@@ -24,17 +28,16 @@ public class DadosBaguncados {
     conjunto.add("Outro dado parao conjunto");
     conjunto.add(true);
 
-    System.out.println(conjunto); // Imprimimos o conjunto
+    System.out.println(conjunto);
 
-    System.out.println(conjunto.size()); // retorna o tamanho do cojunto
+    System.out.println(conjunto.size());
 
-    conjunto.remove(3); // removemos um dado/tipo do conjunto
+    conjunto.remove(3);
 
     System.out.println(conjunto);
 
     /*
-     * Em conjunto não podemos adicionar dados/tipos iguais, ele simplesmente vai
-     * ignorar o dado repetido
+     * Em conjunto não podemos adicionar dados/tipos iguais, serão ignorados
      */
 
     conjunto.add("Outro dado parao conjunto");

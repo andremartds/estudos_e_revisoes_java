@@ -10,7 +10,7 @@ import java.util.TreeSet;
 public class DadosComportados {
   public static void main(String[] args) {
 
-    HashSet<String> conj1 = new HashSet<String>(); // o diamond é para especificar o tipo
+    HashSet<String> conj1 = new HashSet<>();
     conj1.add("Meu primeiro dado");
     conj1.add("Meu segundo dado");
     conj1.add("Meu terceiro dado");
@@ -23,7 +23,7 @@ public class DadosComportados {
     /*
      * Trabalhando com conjunto ordenado
      */
-    Set<Integer> conj2 = new TreeSet<Integer>();
+    Set<Integer> conj2 = new TreeSet<>();
     conj2.add(1);
     conj2.add(2);
     conj2.add(3);

@@ -6,7 +6,9 @@ public abstract class Conta {
 	public abstract void deposita(double valor);
 	
 	public void saca(double valor) {
-		this.saldo -= valor;
+		if(saldo > valor) {
+			this.saldo -= valor;
+		}
 	}
 	
 	public void atualiza(double taxa) {

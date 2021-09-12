@@ -1,5 +1,7 @@
 package arrays_e_collections.collections.list;
-
+/**
+ * review 10/21
+ * **/
 public class Pessoa {
 	String nome;
 
@@ -23,9 +25,10 @@ public class Pessoa {
 			return false;
 		Pessoa other = (Pessoa) obj;
 		if (nome == null) {
-			if (other.nome != null)
+			if(other.nome != null) {
 				return false;
-		} else if (!nome.equals(other.nome))
+			}
+		} else if(!nome.equals(other.nome))
 			return false;
 		return true;
 	}

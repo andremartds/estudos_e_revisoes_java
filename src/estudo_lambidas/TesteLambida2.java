@@ -3,6 +3,7 @@ package estudo_lambidas;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 public class TesteLambida2 {
 
@@ -17,5 +18,8 @@ public class TesteLambida2 {
 		nomes.stream().sorted()
 		.map(nome -> nome.toString() )
 		.forEach(nome->System.out.println(nome));
+
+		nomes.forEach(nome -> System.out.println(nome.toUpperCase(Locale.ROOT)));
+
 	}
 }
